@@ -1,0 +1,67 @@
+﻿  main.cpp
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(113,63): warning C4244: '=': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(109): message : while compiling class template member function 'void RecordBasicRunProgressACS<Algorithm>::finished(ACS_t &)'
+          with
+          [
+              Algorithm=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>,
+              ACS_t=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\type_traits(355): message : see reference to class template instantiation 'RecordBasicRunProgressACS<Algorithm>' being compiled
+          with
+          [
+              Algorithm=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(1608): message : see reference to class template instantiation 'std::is_convertible<_Yty *,_Ty *>' being compiled
+          with
+          [
+              _Yty=RecordBasicRunProgressACS<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>,
+              _Ty=ProgressVisitor<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(201): message : see reference to class template instantiation 'std::_SP_pointer_compatible<RecordBasicRunProgressACS<Algorithm>,ProgressVisitor<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>>' being compiled
+          with
+          [
+              Algorithm=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(255): message : see reference to function template instantiation 'void create_progress_visitor<_Ty2>(Algorithm &)' being compiled
+          with
+          [
+              _Ty2=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>,
+              Algorithm=ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(304): message : see reference to function template instantiation 'void Experiment<Problem,PhMem,ACS>::execute<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>(std::shared_ptr<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>,std::shared_ptr<StopCondition>,uint32_t,std::shared_ptr<LocalSearch>)' being compiled
+          with
+          [
+              Problem=TSPInstance,
+              PhMem=StandardPheromoneMemory
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(304): message : see reference to function template instantiation 'void Experiment<Problem,PhMem,ACS>::execute<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>(std::shared_ptr<ACS<ACSNodeSelectionImpl<ProblemModel<TSPInstance>>,StandardPheromoneMemory>>,std::shared_ptr<StopCondition>,uint32_t,std::shared_ptr<LocalSearch>)' being compiled
+          with
+          [
+              Problem=TSPInstance,
+              PhMem=StandardPheromoneMemory
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(299): message : while compiling class template member function 'void Experiment<Problem,PhMem,ACS>::run_sa_version(std::shared_ptr<StopCondition>,uint32_t,std::shared_ptr<LocalSearch>)'
+          with
+          [
+              Problem=TSPInstance,
+              PhMem=StandardPheromoneMemory
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(499): message : see reference to function template instantiation 'void Experiment<Problem,PhMem,ACS>::run_sa_version(std::shared_ptr<StopCondition>,uint32_t,std::shared_ptr<LocalSearch>)' being compiled
+          with
+          [
+              Problem=TSPInstance,
+              PhMem=StandardPheromoneMemory
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(516): message : see reference to class template instantiation 'Experiment<Problem,PhMem,ACS>' being compiled
+          with
+          [
+              Problem=TSPInstance,
+              PhMem=StandardPheromoneMemory
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(544): message : see reference to function template instantiation 'void run_experiment_helper<Problem,StandardPheromoneMemory>(std::shared_ptr<TSPInstance>,RNG &,std::string)' being compiled
+          with
+          [
+              Problem=TSPInstance
+          ]
+C:\Users\wxarm\source\repos\Ants\Ants\main.cpp(740): message : see reference to function template instantiation 'void run_experiment<TSPInstance>(std::shared_ptr<TSPInstance>,RNG &,std::string,std::string)' being compiled
+  Ants.vcxproj -> C:\Users\wxarm\source\repos\Ants\Debug\Ants.exe
